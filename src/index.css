@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
 
+:root {
+  --text-color: #333136;
+  --primary-dark: #E7816B;
+  --primary-light: #FDF3F0;
+  --secondary-dark: #1D1C1E;
+  --primary-font: 'Jost', sans-serif;
+  --secondary-font: 'League Spartan', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,10 +18,101 @@
 
 body {
   /* font-family: 'League Spartan', sans-serif; */
-  font-family: 'Jost', sans-serif;
-  font-size: 62.5%;
+  font-family: var(--primary-font);
 }
 
-h1 {
-  font-size: 1.6rem;
+.nav-items {
+  padding: 35px 24px;
+  display: flex;
+  justify-content: space-between;
+  border:1px solid red;
+  align-items: center;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 10;
+}
+
+.header-circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: conic-gradient(from 90deg at 50% 50%, rgba(231, 129, 107, 0.0001) 0deg, #E7816B 359.74deg, rgba(231, 129, 107, 0.0001) 360deg);
+  transform: matrix(0, -1, -1, 0, 0, 0);
+}
+
+.title {
+  /* margin-left: 16px; */
+  font-size: 28px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: var(--text-color);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.icon-container i{
+  font-size: 24px;
+  width: 24px;
+  height: 20px;
+  color: var(--secondary-dark);
+}
+
+.hero {
+  background-color: var(--primary-dark);
+  height: 843px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-circle {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+  left: calc(50% - 640px/2 + 772.5px);
+  top: calc(50% - 640px/2 + 640.5px);
+  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.31;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+}
+
+.hero-content {
+  margin: 80px 24px;
+  text-align: center;
+}
+
+.hero-content > h2 {
+  font-size: 32px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.hero-content > p {
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.hero-btn {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+
+.hero-image {
+  height: 543px;
+  margin: 0 46px 0 46px;
+  background-image: url('./assets/home/desktop/image-hero-phone.png');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: 50% 30%;
 }
