@@ -1,4 +1,7 @@
-
+import backgroundCircle from "../assets/home/desktop/bg-pattern-hero-home.svg"
+import passionatePic from "../assets/home/desktop/illustration-passionate.svg"
+import resourcefulPic from "../assets/home/desktop/illustration-resourceful.svg"
+import friendlyPic from "../assets/home/desktop/illustration-friendly.svg"
 
 const Home = () => {
     return (
@@ -24,8 +27,127 @@ const Home = () => {
                 </div>
                 <div className="hero-image"></div>
             </section>
+            <section className="offers">
+                <div className="offer-container-web">
+                    <div className="offer-item">
+                        <h2>WEB DESIGN</h2>
+                        <p>VIEW PROJECTS<span className="bracket">
+                        <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div className="offer-container-app">
+                    <div className="offer-item">
+                        <h2>APP DESIGN</h2>
+                        <p>VIEW PROJECTS<span className="bracket">
+                        <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div className="offer-container-graphic">
+                    <div className="offer-item">
+                        <h2>GRAPHIC DESIGN</h2>
+                        <p>VIEW PROJECTS<span className="bracket">
+                        <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="soft-skills">
+                <div className="soft-skills-container">
+                    <div className="soft-skills-image">
+                        <img src={backgroundCircle} 
+                            alt="background-circle" 
+                            className="soft-skills-circle circle-passionate" />
+                        <img src={passionatePic} alt="passionate" className="skills-pic" />
+                    </div>
+                    <div className="soft-skills-desc">
+                        <h3>PASSIONATE</h3>
+                        <p>Each project starts with an in-depth brand research to ensure 
+                            we only create products that serve a purpose. We merge art, 
+                            design, and technology into exciting new solutions.
+                        </p>
+                    </div>
+                </div>
+                <div className="soft-skills-container">
+                    <div className="soft-skills-image">
+                        <img src={backgroundCircle} 
+                            alt="background-circle" 
+                            className="soft-skills-circle circle-resourceful" />
+                        <img src={resourcefulPic} alt="resourceful" className="skills-pic" />
+                    </div>
+                    <div className="soft-skills-desc">
+                        <h3>RESOURCEFUL</h3>
+                        <p>
+                            Everything that we do has a strategic purpose. We use an agile approach 
+                            in all of our projects and value customer collaboration. It guarantees 
+                            superior results that fulfill our clients’ needs.
+                        </p>
+                    </div>
+                </div>
+                <div className="soft-skills-container mg-bottom">
+                    <div className="soft-skills-image">
+                        <img src={backgroundCircle} 
+                            alt="background-circle" 
+                            className="soft-skills-circle circle-friendly" />
+                        <img src={friendlyPic} alt="friendly" className="skills-pic" />
+                    </div>
+                    <div className="soft-skills-desc">
+                        <h3>FRIENDLY</h3>
+                        <p> 
+                            We are a group of enthusiastic folks who know how to put 
+                            people first. Our success depends on our customers, 
+                            and we strive to give them the best experience a 
+                            company can provide.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
         </main>
+        <footer className="footer">
+            <div className="footer-container">
+            <div className="get-in-touch">
+                <div className="get-in-touch-container">
+                    <h2>Let’s talk about your project</h2>
+                    <p>
+                    Ready to take it to the next level? Contact us today and find out 
+                    how our expertise can help your business grow.
+                    </p>
+                    <button className="footer-btn">GET IN TOUCH</button>
+                </div>
+
+            </div>
+            <div className="footer-contents">
+                <div className="logo-container footer-logo">
+                    <div className="header-circle"></div>
+                    <h1 className="title-footer">DESIGNO</h1>  
+                </div>
+                <ul className="footer-nav">
+                    <li>OUR COMPANY</li>
+                    <li>LOCATIONS</li>
+                    <li>CONTACT</li>
+                </ul>
+                <div className="office-location">
+                    <p className="bold">Designo Central Office</p>
+                    <p>3886 Wellington Street</p>
+                    <p>Toronto, Ontario M9C 3J5</p>
+                </div>
+                <div className="contact-us">
+                    <p className="bold">Contact Us (Central Office)</p>
+                    <p>P : +1 253-863-8967</p>
+                    <p>M : contact@designo.co</p>
+                </div>
+                <div className="footer-icons">
+                    <i className="fa-brands fa-square-facebook"></i>
+                    <i className="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-pinterest"></i>
+                    <i className="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            </div>
+        </footer>
         </>
 
     )
