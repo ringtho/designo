@@ -75,6 +75,7 @@ body {
 }
 
 .hero {
+  margin-bottom: 120px;
   background-color: var(--primary-dark);
   height: 843px;
   position: relative;
@@ -138,7 +139,7 @@ body {
 }
 
 .offers {
-  margin: 120px 24px;
+  margin: 0px 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -211,6 +212,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin-block: 120px;
 }
 
 .soft-skills-container {
