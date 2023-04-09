@@ -635,3 +635,75 @@ button:hover {
   gap: 40px;
 }
 
+.form-container {
+  background-color: var(--primary-dark);
+  padding: 72px 24px;
+}
+
+.contact-wrapper {
+ border: 1px solid red;
+ display: flex;
+ flex-direction: column;
+ gap: 48px;
+}
+
+.contact-heading {
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-heading > h1 {
+  font-size: 32px;
+  font-weight: 500;
+  
+}
+
+.contact-heading > p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  background-color: var(--primary-dark);
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 25px 14px 12px 14px;
+  color: #FFFFFF;
+}
+
+.form textarea {
+  height: 126px;
+  resize: none;
+  font-family: var(--primary-font);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.5;
+
+}
+
+.form button {
+  padding: 18px 48px;
+
+}
+
+
+
