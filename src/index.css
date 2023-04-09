@@ -134,6 +134,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  border: 5px solid greenyellow;
 }
 
 .offers {
@@ -387,4 +388,49 @@ body {
 
 button:hover {
   cursor: pointer;
+}
+
+
+/* design */
+.design-hero {
+  height: 320px;
+  background-color: var(--primary-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.design-hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(50% - 292px/2);
+  left: calc(50% - 292px/2);
+  z-index: 1;
+  background: url("./assets/home/desktop/bg-pattern-hero-home.svg") repeat-x;
+  background-size: 292px;
+}
+
+.design-hero-content {
+  height: 100%;
+  color: #FFFFFF;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.design-hero-content > h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.design-hero-content > p {
+  font-size: 15px;
+  font-weight: 400;
 }
