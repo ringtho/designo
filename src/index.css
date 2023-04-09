@@ -624,3 +624,14 @@ button:hover {
   margin-top: 32px;
 }
 
+.location-container > h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
