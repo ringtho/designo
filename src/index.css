@@ -42,11 +42,13 @@ body {
 
 .title,
 .title-footer {
-  /* margin-left: 16px; */
-  font-size: 28px;
+  margin-left: 16px;
+  font-size: 24px;
+  line-height: 24px;
   font-family: var(--secondary-font);
   font-weight: 600;
   letter-spacing: 5px;
+  margin-top: 4px;
   
 }
 
@@ -59,9 +61,9 @@ body {
 }
 
 .logo-container {
+  width: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 
 .icon-container i{
@@ -75,24 +77,29 @@ body {
   background-color: var(--primary-dark);
   height: 843px;
   position: relative;
-  z-index: -1;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-/* .hero-circle {
+.hero::before{
+  content: "";
   position: absolute;
-  width: 640px;
-  height: 640px;
-  left: calc(50% - 640px/2 + 772.5px);
-  top: calc(50% - 640px/2 + 640.5px); 
-  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
-  mix-blend-mode: normal;
-  opacity: 0.31;
-  transform: matrix(0, -1, -1, 0, 0, 0);
+  width: 200%;
+  height: 200%;
+  top: calc(50% - 640px/2);
+  left: 0;
   z-index: 1;
-  border: 1px solid red;
-} */
+  background: url("./assets/home/desktop/bg-pattern-hero-home.svg") no-repeat;
+  background-size: 640px;
+}
+
+.hero-container {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+}
 
 .hero-content {
   margin: 80px 24px;
@@ -125,7 +132,7 @@ body {
   background-image: url('./assets/home/desktop/image-hero-phone.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0% 0%;
+  background-position: center top;
 }
 
 .offers {
@@ -146,22 +153,30 @@ body {
 }
 
 .offer-container-web {
-  background: url('./assets/home/mobile/image-web-design.jpg');
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/mobile/image-web-design.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .offer-container-app {
-  background: url('./assets/home/mobile/image-app-design.jpg');
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/mobile/image-app-design.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .offer-container-graphic {
-  background: url('./assets/home/mobile/image-graphic-design.jpg');
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/mobile/image-graphic-design.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #000000; */
 }
 
 .offer-item {
@@ -258,12 +273,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
-.footer-logo {
+.logo-container.footer-logo {
   margin-bottom: 32px;
   width: 100%;
+  justify-content: center;
 }
 
 .footer-nav {
@@ -322,11 +337,36 @@ body {
   padding: 64px 24px;
   text-align: center;
   color: #FFFFFF;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 2px solid greenyellow;
+}
+
+.get-in-touch-wrapper {
+  border: 5px solid red;
+  position: relative;
+  overflow: hidden;
+}
+
+.get-in-touch-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  background: url("./assets/home/desktop/bg-pattern-hero-home.svg");
+  background-size: 292px;
+  transform: rotate(30deg);
 }
 
 .get-in-touch-container > h2 {
   font-size: 32px;
   font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
 }
 
 .get-in-touch-container > p {
@@ -344,4 +384,8 @@ body {
 
 .mg-bottom {
   margin-bottom: 24px;
+}
+
+button:hover {
+  cursor: pointer;
 }
