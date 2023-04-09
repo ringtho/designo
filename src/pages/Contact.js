@@ -27,8 +27,8 @@ const Contact = () => {
                             </p>
                         </div>
                         <form className="form" action="#">
-                            <input type="name" name="name" placeholder="Name" />
-                            <input type="email" name="email" placeholder="Email" />
+                            <input type="name" name="name" required placeholder="Name" />
+                            <input type="email" name="email" required placeholder="Email" />
                             <input type="text" name="phone" placeholder="Phone" />
                             <textarea name="message" placeholder="Your Message" />
                             <button type="submit">SUBMIT</button>

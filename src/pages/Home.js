@@ -4,6 +4,7 @@ import resourcefulPic from "../assets/home/desktop/illustration-resourceful.svg"
 import friendlyPic from "../assets/home/desktop/illustration-friendly.svg"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import { Link } from "react-router-dom"
 
 const Home = () => {
     return (
@@ -26,25 +27,31 @@ const Home = () => {
                 <div className="offer-container-web">
                     <div className="offer-item">
                         <h2>WEB DESIGN</h2>
-                        <p>VIEW PROJECTS<span className="bracket">
-                        <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
-                        </p>
+                        <Link to="web-design" className="link">
+                            <p>VIEW PROJECTS<span className="bracket">
+                            <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
+                            </p>
+                        </Link>
                     </div>
                 </div>
                 <div className="offer-container-app">
                     <div className="offer-item">
                         <h2>APP DESIGN</h2>
-                        <p>VIEW PROJECTS<span className="bracket">
-                        <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
-                        </p>
+                        <Link to="app-design" className="link">
+                            <p>VIEW PROJECTS<span className="bracket">
+                            <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
+                            </p>
+                        </Link>
                     </div>
                 </div>
                 <div className="offer-container-graphic">
                     <div className="offer-item">
                         <h2>GRAPHIC DESIGN</h2>
-                        <p>VIEW PROJECTS<span className="bracket">
-                        <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
-                        </p>
+                        <Link to="graphics-design" className="link">
+                            <p>VIEW PROJECTS<span className="bracket">
+                            <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
+                            </p>
+                        </Link>
                     </div>
                 </div>
             </section>

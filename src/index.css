@@ -641,7 +641,6 @@ button:hover {
 }
 
 .contact-wrapper {
- border: 1px solid red;
  display: flex;
  flex-direction: column;
  gap: 48px;
@@ -669,6 +668,7 @@ button:hover {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form input,
@@ -678,6 +678,7 @@ button:hover {
   border-bottom: 1px solid #FFFFFF;
   padding: 25px 14px 12px 14px;
   color: #FFFFFF;
+  width: 100%;
 }
 
 .form textarea {
@@ -702,8 +703,17 @@ textarea:focus {
 
 .form button {
   padding: 18px 48px;
-
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: none;
 }
+
+.link {
+  text-decoration: none;
+}
+
+
 
 
 
