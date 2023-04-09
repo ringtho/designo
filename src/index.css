@@ -24,11 +24,12 @@ body {
   padding: 35px 24px;
   display: flex;
   justify-content: space-between;
-  border:1px solid red;
   align-items: center;
-  /* position: fixed; */
+  position: sticky;
+  top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 200;
+  background-color: #FFFFFF;
 }
 
 .header-circle {
@@ -340,11 +341,9 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  border: 2px solid greenyellow;
 }
 
 .get-in-touch-wrapper {
-  border: 5px solid red;
   position: relative;
   overflow: hidden;
 }
