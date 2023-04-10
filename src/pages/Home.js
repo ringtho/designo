@@ -10,7 +10,10 @@ const Home = () => {
     return (
         <>
         <Navbar />
+        
+        <div className="navbar-small-screens" >
         <main>
+            
             <section className="hero">
                 <div className="hero-container">
                 <div className="hero-content">
@@ -106,6 +109,7 @@ const Home = () => {
                 </div>
             </section>
         </main>
+        </div>
         <Footer />
         </>
 
