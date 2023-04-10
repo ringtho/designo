@@ -67,11 +67,8 @@ body {
   align-items: center;
 }
 
-.icon-container i{
-  font-size: 24px;
-  width: 24px;
-  height: 20px;
-  color: var(--secondary-dark);
+.navbar-icon:hover {
+  cursor: pointer;
 }
 
 .hero {
@@ -709,7 +706,8 @@ textarea:focus {
   border: none;
 }
 
-.link {
+.link,
+.designo-title-link {
   text-decoration: none;
 }
 
