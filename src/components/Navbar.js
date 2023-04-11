@@ -18,6 +18,11 @@ const Navbar = () => {
                     <h1 className="title">DESIGNO</h1>
                 </Link>
             </div>
+            <nav className="navbar-menu">
+                <Link>OUR COMPANY</Link>
+                <Link>LOCATIONS</Link>
+                <Link>CONTACT</Link>
+            </nav>
             <div className="icon-container">
                 { isMenuOpen ?
                 <img 
