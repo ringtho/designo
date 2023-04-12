@@ -4,7 +4,9 @@ import resourcefulPic from "../assets/home/desktop/illustration-resourceful.svg"
 import friendlyPic from "../assets/home/desktop/illustration-friendly.svg"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { Link } from "react-router-dom"
+import AppDesignCard from "../components/AppDesignCard"
+import WebDesignCard from "../components/WebDesignCard"
+import GraphicDeignCard from "../components/GraphicDesignCard"
 
 const Home = () => {
     return (
@@ -27,36 +29,9 @@ const Home = () => {
                 </div>
             </section>
             <section className="offers">
-                <div className="offer-container-web">
-                    <div className="offer-item">
-                        <h2>WEB DESIGN</h2>
-                        <Link to="web-design" className="link">
-                            <p>VIEW PROJECTS<span className="bracket">
-                            <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
-                            </p>
-                        </Link>
-                    </div>
-                </div>
-                <div className="offer-container-app">
-                    <div className="offer-item">
-                        <h2>APP DESIGN</h2>
-                        <Link to="app-design" className="link">
-                            <p>VIEW PROJECTS<span className="bracket">
-                            <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
-                            </p>
-                        </Link>
-                    </div>
-                </div>
-                <div className="offer-container-graphic">
-                    <div className="offer-item">
-                        <h2>GRAPHIC DESIGN</h2>
-                        <Link to="graphics-design" className="link">
-                            <p>VIEW PROJECTS<span className="bracket">
-                            <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
-                            </p>
-                        </Link>
-                    </div>
-                </div>
+                <WebDesignCard />
+                <AppDesignCard />
+                <GraphicDeignCard />
             </section>
             <section className="soft-skills">
                 <div className="soft-skills-container">

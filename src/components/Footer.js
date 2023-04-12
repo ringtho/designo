@@ -21,7 +21,9 @@ const Footer = () => {
                 <div className="footer-contents">
                     <div className="logo-container footer-logo">
                         <div className="header-circle"></div>
-                        <h1 className="title-footer">DESIGNO</h1>  
+                        <Link to="/" className="link">
+                            <h1 className="title-footer">DESIGNO</h1>
+                        </Link>  
                     </div>
                     <ul className="footer-nav">
                         <Link to="/about" className="link">

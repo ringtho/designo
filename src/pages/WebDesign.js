@@ -3,6 +3,8 @@ import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import AppCard from "../components/AppCard"
 import { data } from "../data"
+import AppDesignCard from "../components/AppDesignCard"
+import GraphicDeignCard from "../components/GraphicDesignCard"
 
 
 const WebDesign = () => {
@@ -20,24 +22,8 @@ const WebDesign = () => {
             {appCards}
             </div>
             <section className="offers">
-                <div className="offer-container-app">
-                    <div className="offer-item">
-                        <h2>APP DESIGN</h2>
-                        <p>VIEW PROJECTS<span className="bracket">
-                        <i className="fa-solid fa-chevron-right fa-fade fa-sm">
-                            </i></span>
-                        </p>
-                    </div>
-                </div>
-                <div className="offer-container-graphic">
-                    <div className="offer-item">
-                        <h2>GRAPHIC DESIGN</h2>
-                        <p>VIEW PROJECTS<span className="bracket">
-                        <i className="fa-solid fa-chevron-right fa-fade fa-sm">
-                            </i></span>
-                        </p>
-                    </div>
-                </div>
+                <AppDesignCard />
+                <GraphicDeignCard />
             </section>
         </main>
         <Footer />
