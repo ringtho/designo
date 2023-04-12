@@ -712,6 +712,16 @@ textarea:focus {
   text-decoration: none;
 }
 
+.link {
+  color: #FFFFFF;
+}
+
+.link:hover,
+.footer-nav.link:hover {
+  color: #E7816B;
+  transition: color 0.5s;
+}
+
 /* .navbar-small-screens {
   height: 100%;
   width: 100%;
