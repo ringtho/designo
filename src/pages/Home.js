@@ -7,6 +7,7 @@ import Footer from "../components/Footer"
 import AppDesignCard from "../components/AppDesignCard"
 import WebDesignCard from "../components/WebDesignCard"
 import GraphicDeignCard from "../components/GraphicDesignCard"
+import GetInTouch from "../components/GetInTouch"
 
 const Home = () => {
     return (
@@ -85,6 +86,7 @@ const Home = () => {
             </section>
         </main>
         </div>
+        <GetInTouch />
         <Footer />
         </>
 

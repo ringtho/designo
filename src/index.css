@@ -260,19 +260,11 @@ body {
 }
 
 .footer {
-  min-height: 815px;
   background-color: var(--secondary-dark);
-  position: relative;
-  margin-top: 286px;
-}
-
-.footer-container {
-  position: absolute;
-  top: -22%;
 }
 
 .footer-contents {
-  margin: 64px 24px;
+  padding: 64px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
