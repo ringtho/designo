@@ -1,15 +1,6 @@
 import { Link } from "react-router-dom"
-import { useEffect } from "react";
 
 const Footer = () => {
-
-    useEffect(() => {
-        window.scrollTo({
-               top: 0,
-               left: 0,
-               behavior: "smooth"
-             });
-     }, [])
 
     return (
         <footer className="footer">
