@@ -10,6 +10,7 @@ import GraphicDeignCard from "../components/GraphicDesignCard"
 import GetInTouch from "../components/GetInTouch"
 
 const Home = () => {
+
     return (
         <>
         <Navbar />

@@ -5,10 +5,7 @@ import iconHamburger from "../assets/shared/mobile/icon-hamburger.svg"
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
-
-    console.log(isMenuOpen)
 
     return (
         <header className="nav-items">
