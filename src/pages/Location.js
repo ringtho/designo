@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import canadaMap from "../assets/locations/desktop/image-map-canada.png"
 import australiaMap from "../assets/locations/desktop/image-map-australia.png"
 import ukMap from "../assets/locations/desktop/image-map-united-kingdom.png"
+import GetInTouch from "../components/GetInTouch"
 
 
 const Location = () => {
@@ -65,6 +66,7 @@ const Location = () => {
                 </div>
             </section>
             </main>
+            <GetInTouch />
             <Footer />
         </>
     

@@ -7,6 +7,7 @@ import backgroundCircle from "../assets/about/desktop/bg-pattern-hero-about-desk
 import canadaImg from "../assets/about/desktop/canada.svg"
 import australiaImg from "../assets/about/desktop/australia.svg"
 import unitedKingdomImg from "../assets/about/desktop/unitedkingdom.svg"
+import GetInTouch from "../components/GetInTouch"
 
 
 
@@ -14,7 +15,7 @@ const About = () => {
     return (
         <>
         <Navbar />
-        <main>
+        <section className="about-wrapper">
             <section className="about-hero">
                 <img src={heroImg} alt="" className="about-hero-image" />
                 <div className="about-components">
@@ -111,7 +112,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
-        </main>
+        </section>
+        <GetInTouch />
         <Footer />
         </>
     )

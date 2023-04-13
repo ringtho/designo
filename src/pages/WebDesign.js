@@ -5,6 +5,7 @@ import AppCard from "../components/AppCard"
 import { data } from "../data"
 import AppDesignCard from "../components/AppDesignCard"
 import GraphicDeignCard from "../components/GraphicDesignCard"
+import GetInTouch from "../components/GetInTouch"
 
 
 const WebDesign = () => {
@@ -26,6 +27,7 @@ const WebDesign = () => {
                 <GraphicDeignCard />
             </section>
         </main>
+        <GetInTouch />
         <Footer />
         </>
     )
