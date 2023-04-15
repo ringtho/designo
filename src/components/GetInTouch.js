@@ -1,6 +1,11 @@
-
+import { useNavigate } from "react-router-dom"
 
 const GetInTouch = () => {
+    
+    const navigate = useNavigate()
+    const onClick = () => {
+        navigate('/contact')
+    }
 
     return (
         <section className="get-in-touch-section">
@@ -13,7 +18,7 @@ const GetInTouch = () => {
                         Ready to take it to the next level? Contact us today and find out 
                         how our expertise can help your business grow.
                         </p>
-                        <button className="footer-btn">GET IN TOUCH</button>
+                        <button className="footer-btn" onClick={onClick}>GET IN TOUCH</button>
                     </div>
                 </div>
             </div>
