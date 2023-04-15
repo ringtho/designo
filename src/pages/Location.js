@@ -47,7 +47,7 @@ const Location = () => {
                     </div>
                 </div>
             </section>
-            <section className="about-hero">
+            <section className="about-hero" id="uk">
                 <img src={ukMap} alt="united-kingdom" className="about-hero-image" />
                 <div className="about-descriptions">
                     <div className="about-description-content">

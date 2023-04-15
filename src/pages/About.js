@@ -3,12 +3,8 @@ import Footer from "../components/Footer"
 import heroImg from "../assets/about/mobile/image-about-hero.jpg"
 import wordclassImg from "../assets/about/mobile/image-world-class-talent.jpg"
 import realdealImg from "../assets/about/mobile/image-real-deal.jpg"
-import backgroundCircle from "../assets/about/desktop/bg-pattern-hero-about-desktop.svg"
-import canadaImg from "../assets/about/desktop/canada.svg"
-import australiaImg from "../assets/about/desktop/australia.svg"
-import unitedKingdomImg from "../assets/about/desktop/unitedkingdom.svg"
 import GetInTouch from "../components/GetInTouch"
-
+import LocationCard from "../components/LocationCard"
 
 
 const About = () => {
@@ -54,44 +50,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="about-location">
-                <div className="about-location-container">
-                    <div className="about-location-image">
-                        <img src={backgroundCircle} 
-                            alt="background-circle" 
-                            className="about-location-circle circle-canada" />
-                        <img src={canadaImg} alt="canada" className="country-pic" />
-                    </div>
-                    <div className="about-location-country">
-                        <h3>CANADA</h3>
-                        <button>SEE LOCATION</button>
-                    </div>
-                </div>
-                <div className="about-location-container">
-                    <div className="about-location-image">
-                        <img src={backgroundCircle} 
-                            alt="background-circle" 
-                            className="about-location-circle circle-australia" />
-                        <img src={australiaImg} alt="australia" className="country-pic" />
-                    </div>
-                    <div className="about-location-country">
-                        <h3>AUSTRALIA</h3>
-                        <button>SEE LOCATION</button>
-                    </div>
-                </div>
-                <div className="about-location-container">
-                    <div className="about-location-image">
-                        <img src={backgroundCircle} 
-                            alt="background-circle" 
-                            className="about-location-circle circle-uk" />
-                        <img src={unitedKingdomImg} alt="uk" className="country-pic" />
-                    </div>
-                    <div className="about-location-country">
-                        <h3>UNITED KINGDOM</h3>
-                        <button>SEE LOCATION</button>
-                    </div>
-                </div>
-            </section>
+            <LocationCard />
             <section className="about-hero">
                 <img src={realdealImg} alt="" className="about-hero-image" />
                 <div className="about-descriptions">
