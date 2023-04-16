@@ -86,9 +86,10 @@ const Home = () => {
                 </div>
             </section>
         </main>
-        </div>
+        
         <GetInTouch />
         <Footer />
+        </div>
         </>
 
     )

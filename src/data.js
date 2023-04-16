@@ -12,6 +12,8 @@ import loopstudiosImg from "./assets/app-design/desktop/image-loopstudios.jpg"
 import timbrownImg from "./assets/graphic-design/desktop/image-change.jpg"
 import boxedwaterImg from "./assets/graphic-design/desktop/image-boxed-water.jpg"
 import scienceImg from "./assets/graphic-design/desktop/image-science.jpg"
+import wordclassImg from "./assets/about/mobile/image-world-class-talent.jpg"
+import realdealImg from "./assets/about/mobile/image-real-deal.jpg"
 
 export const data = {
 
@@ -126,6 +128,31 @@ export const data = {
         title: "Graphic Design",
         description: `We deliver eye-catching branding 
         materials that are tailored to meet your business objectives.`
+    },
+    aboutDescription1: {
+        img: wordclassImg,
+        title: "World-class talent",
+        paragraph1: `We are a crew of strategists, problem-solvers, and technologists. 
+        Every design is thoughtfully crafted from concept to launch, 
+        ensuring success in its given market. We are constantly updating our 
+        skills in a myriad of platforms.`,
+        paragraph2: `Our team is multi-disciplinary and we are not merely interested in 
+        form — content and meaning are just as important. We give great 
+        importance to craftsmanship, service, and prompt delivery. 
+        Clients have always been impressed with our high-quality 
+        outcomes that encapsulates their brand’s story and mission.`
+    },
+    aboutDescription2: {
+        img: realdealImg,
+        title: "The real deal",
+        paragraph1: `As strategic partners in our clients’ businesses, we are ready to 
+        take on any challenge as our own.
+        Solving real problems require empathy and collaboration, 
+        and we strive to bring a fresh perspective to every opportunity. 
+        We make design and technology more accessible and give you tools to measure success.`,
+        paragraph2: `We are visual storytellers in appealing and captivating ways. 
+        By combining business and marketing strategies, we inspire audiences 
+        to take action and drive real results.`
     }
 
 }
