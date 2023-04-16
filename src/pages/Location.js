@@ -10,14 +10,14 @@ const Location = () => {
         <MapCard key={idx} {...location} />
     ))
     return (
-        <>
+        <div className="app">
             <Navbar />
             <main className="location-wrapper">
             {locationCards}
             </main>
             <GetInTouch />
             <Footer />
-        </>
+        </div>
     )
 }
 

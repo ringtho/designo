@@ -13,7 +13,7 @@ const Contact = () => {
         email: "Please use a valid email address"
     }
     return (
-        <>
+        <div className="app">
             <Navbar />
             <main>
                 <section className="form-container">
@@ -76,7 +76,7 @@ const Contact = () => {
                 <LocationCard />
             </main>
             <Footer/>
-        </>
+        </div>
     )
 }
 

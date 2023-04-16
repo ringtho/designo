@@ -15,7 +15,7 @@ const AppDesign = () => {
     })
 
     return (
-        <>
+        <div className="app">
         <Navbar />
         <main>
             <Hero {...data.appHero} />
@@ -29,7 +29,7 @@ const AppDesign = () => {
         </main>
         <GetInTouch />
         <Footer />
-        </>
+        </div>
     )
 }
 

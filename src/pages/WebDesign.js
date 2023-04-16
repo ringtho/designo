@@ -15,7 +15,7 @@ const WebDesign = () => {
     })
 
     return (
-        <>
+        <div className="app">
         <Navbar />
         <main>
             <Hero {...data.webHero} />
@@ -29,7 +29,7 @@ const WebDesign = () => {
         </main>
         <GetInTouch />
         <Footer />
-        </>
+        </div>
     )
 }
 

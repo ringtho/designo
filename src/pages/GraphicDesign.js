@@ -15,7 +15,7 @@ const GraphicDesign = () => {
     })
 
     return (
-        <>
+        <div className="app">
         <Navbar />
         <main>
             <Hero {...data.graphicsHero} />
@@ -29,7 +29,7 @@ const GraphicDesign = () => {
         </main>
         <GetInTouch />
         <Footer />
-        </>
+        </div>
     )
 }
 

@@ -9,7 +9,7 @@ import { data } from "../data"
 
 const About = () => {
     return (
-        <>
+        <div className="app">
         <Navbar />
         <section className="about-wrapper">
             <section className="about-hero">
@@ -37,7 +37,7 @@ const About = () => {
         </section>
         <GetInTouch />
         <Footer />
-        </>
+        </div>
     )
 }
 

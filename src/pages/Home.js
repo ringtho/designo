@@ -8,7 +8,7 @@ import OfferCards from "../components/offers/OfferCards"
 const Home = () => {
 
     return (
-        <>
+        <div className="app">
         <Navbar />
         
         <main className="home-main">
@@ -30,7 +30,7 @@ const Home = () => {
         
         <GetInTouch />
         <Footer />
-        </>
+        </div>
 
     )
 }
