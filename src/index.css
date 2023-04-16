@@ -167,12 +167,15 @@ h1, h2, h3, h4 {
 }
 
 .hero-image {
+
   height: 543px;
-  margin: 0 46px 0 46px;
-  background-image: url('./assets/home/desktop/image-hero-phone.png');
-  background-repeat: no-repeat;
+  width: 280px;
+  margin: 80px auto 0 auto;
+  background: url('./assets/home/desktop/image-hero-phone.png') no-repeat;
   background-size: cover;
-  background-position: center top;
+  /* background-position: 50% 0; */
+  /* transform: scaleX(1.5); */
+  /* clip-path: inset(10px 0 0 0); */
   border: 5px solid greenyellow;
 }
 
@@ -790,12 +793,7 @@ textarea:focus {
   transition: color 0.5s;
 }
 
-.error {
-  width: 100%;
-  padding-block: 8px;
-  color: #bf1650;
-  font-weight: 500;
-}
+
 
 .map-leaflet {
   height: 320px;
@@ -806,7 +804,18 @@ textarea:focus {
 button:hover {
   background-color: var(--primary-dark-hover);
   color: #FFFFFF;
-  transition-delay: 0.5;
+  transition: all 0.2s;
+}
+
+.error {
+  width: 100%;
+  padding-block: 8px;
+  color: #FFFFFF;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-style: italic;
 }
 
 
