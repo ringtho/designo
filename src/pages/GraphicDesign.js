@@ -3,8 +3,8 @@ import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import AppCard from "../components/AppCard"
 import { data } from "../data"
-import WebDesignCard from "../components/WebDesignCard"
-import AppDesignCard from "../components/AppDesignCard"
+import WebDesignCard from "../components/offers/WebDesignCard"
+import AppDesignCard from "../components/offers/AppDesignCard"
 import GetInTouch from "../components/GetInTouch"
 
 

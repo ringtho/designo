@@ -1,10 +1,9 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import AppDesignCard from "../components/AppDesignCard"
-import WebDesignCard from "../components/WebDesignCard"
-import GraphicDeignCard from "../components/GraphicDesignCard"
 import GetInTouch from "../components/GetInTouch"
 import SoftSkills from "../components/SoftSkills"
+import OfferCards from "../components/offers/OfferCards"
+
 
 const Home = () => {
 
@@ -12,9 +11,7 @@ const Home = () => {
         <>
         <Navbar />
         
-        {/* <div className="navbar-small-screens" > */}
         <main className="home-main">
-            
             <section className="hero">
                 <div className="hero-container">
                     <div className="hero-content">
@@ -27,11 +24,7 @@ const Home = () => {
                 <div className="hero-image"></div>
                 </div>
             </section>
-            <section className="offers">
-                <WebDesignCard />
-                <AppDesignCard />
-                <GraphicDeignCard />
-            </section>
+            <OfferCards />
             <SoftSkills />
         </main>
         

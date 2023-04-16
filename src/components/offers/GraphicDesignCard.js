@@ -6,7 +6,7 @@ const GraphicDeignCard = () => {
             <div className="offer-item">
                 <h2>GRAPHIC DESIGN</h2>
                 <Link to="/graphics-design" className="link">
-                    <p>VIEW PROJECTS<span className="bracket">
+                    <p className="offer-item-desc">VIEW PROJECTS<span className="bracket">
                     <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
                     </p>
                 </Link>
