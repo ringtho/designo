@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import iconClose from "../assets/shared/mobile/icon-close.svg"
 import iconHamburger from "../assets/shared/mobile/icon-hamburger.svg"
 
@@ -12,14 +12,23 @@ const Navbar = () => {
         <header className="nav-items">
             <div className="logo-container">
                 <div className="header-circle"></div>
-                <Link to="/" className="designo-title-link">
+                <NavLink to="/" className="designo-title-link">
                     <h1 className="title">DESIGNO</h1>
-                </Link>
+                </NavLink>
             </div>
             <nav className="navbar-menu">
-                <Link>OUR COMPANY</Link>
-                <Link>LOCATIONS</Link>
-                <Link>CONTACT</Link>
+                <NavLink 
+                    to="/about" 
+                    className={({isActive}) => isActive ? "active" : ""} 
+                >OUR COMPANY</NavLink>
+                <NavLink 
+                    to="/location" 
+                    className={({isActive}) => isActive ? "active" : ""}
+                >LOCATIONS</NavLink>
+                <NavLink 
+                    to="/contact" 
+                    className={({isActive}) => isActive ? "active" : ""}
+                >CONTACT</NavLink>
             </nav>
             <div className="icon-container">
                 { isMenuOpen ?
@@ -41,9 +50,18 @@ const Navbar = () => {
         {isMenuOpen && (<div className="navbar-mobile-screens" >
             <div className="navbar-mobile-container">
                 <nav className="navbar-mobile-menu">
-                    <Link to="/about">OUR COMPANY</Link>
-                    <Link to="/location">LOCATIONS</Link>
-                    <Link to="/contact">CONTACT</Link>
+                    <NavLink 
+                        to="/about" 
+                        className={({isActive}) => isActive ? "active" : ""} 
+                    >OUR COMPANY</NavLink>
+                    <NavLink 
+                        to="/location" 
+                        className={({isActive}) => isActive ? "active" : ""}
+                    >LOCATIONS</NavLink>
+                    <NavLink 
+                        to="/contact" 
+                        className={({isActive}) => isActive ? "active" : ""}
+                    >CONTACT</NavLink>
                 </nav>
             </div>
             

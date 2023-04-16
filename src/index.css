@@ -853,6 +853,9 @@ button:hover,
   font-style: italic;
 }
 
+a.active {
+  color: var(--primary-dark);
+}
 
 
 
