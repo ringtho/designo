@@ -6,7 +6,7 @@ const WebDesignCard = () => {
             <div className="offer-item">
                 <h2>WEB DESIGN</h2>
                 <Link to="/web-design" className="link">
-                    <p>VIEW PROJECTS<span className="bracket">
+                    <p className="offer-item-desc">VIEW PROJECTS<span className="bracket">
                     <i className="fa-solid fa-chevron-right fa-fade fa-sm"></i></span>
                     </p>
                 </Link>

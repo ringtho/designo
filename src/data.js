@@ -14,6 +14,9 @@ import boxedwaterImg from "./assets/graphic-design/desktop/image-boxed-water.jpg
 import scienceImg from "./assets/graphic-design/desktop/image-science.jpg"
 import wordclassImg from "./assets/about/mobile/image-world-class-talent.jpg"
 import realdealImg from "./assets/about/mobile/image-real-deal.jpg"
+import passionatePic from "./assets/home/desktop/illustration-passionate.svg"
+import resourcefulPic from "./assets/home/desktop/illustration-resourceful.svg"
+import friendlyPic from "./assets/home/desktop/illustration-friendly.svg"
 
 export const data = {
 
@@ -186,6 +189,35 @@ export const data = {
             phone: "078 3115 1400",
             email: "contact@designo.uk"
         }
+
+    ],
+    softSkills : [
+        {
+            name : "PASSIONATE",
+            id: "passionate",
+            description: `Each project starts with an in-depth brand research to ensure 
+            we only create products that serve a purpose. We merge art, 
+            design, and technology into exciting new solutions.`,
+            pic: passionatePic
+        },
+        {
+            name : "RESOURCEFUL",
+            id: "resourceful",
+            description: `Everything that we do has a strategic purpose. We use an agile approach 
+            in all of our projects and value customer collaboration. It guarantees 
+            superior results that fulfill our clients’ needs.`,
+            pic: resourcefulPic
+        },
+
+        {
+            name : "FRIENDLY",
+            id: "friendly",
+            description: `We are a group of enthusiastic folks who know how to put 
+            people first. Our success depends on our customers, 
+            and we strive to give them the best experience a 
+            company can provide.`,
+            pic: friendlyPic
+        },
 
     ]
 }
