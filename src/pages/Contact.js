@@ -44,7 +44,7 @@ const Contact = () => {
                                     name="email" 
                                     placeholder="Email" 
                                     {...register("email", 
-                                    {pattern: /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/gm, 
+                                    {pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 
                                     required: true})} 
                                 />
                                 {errors?.email?.type === "required" && 
