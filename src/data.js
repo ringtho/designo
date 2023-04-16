@@ -154,35 +154,38 @@ export const data = {
         By combining business and marketing strategies, we inspire audiences 
         to take action and drive real results.`
     },
-    mapCanada : {
-        long: 43.64419484706138,
-		lat: -79.3945608610694,
-        country: "Canada",
-        office : "Designo Central Office",
-        address1 : "3886 Wellington Street",
-        address2 : "Toronto, Ontario M9C 3J5",
-        phone: "+1 253-863-8967",
-        email: "contact@designo.co"
-    },
-    mapAustralia : {
-        long: -30.329148449296643,
-		lat: 149.78822916951194,
-        country: "Australia",
-        office : "Designo AU Office",
-        address1 : "19 Balonne Street",
-        address2 : "New South Wales 2443",
-        phone: "(02) 6720 9092",
-        email: "contact@designo.au"
-    },
-    mapUK : {
-        long: 53.71041818128988,
-		lat: -1.3417707595071173,
-        country: "United Kingdom",
-        office : "Designo UK Office",
-        address1 : "13  Colorado Way",
-        address2 : "Rhyd-y-fro SA8 9GA",
-        phone: "078 3115 1400",
-        email: "contact@designo.uk"
-    }
 
+    locations : [
+        {
+            long: 43.64419484706138,
+            lat: -79.3945608610694,
+            country: "Canada",
+            office : "Designo Central Office",
+            address1 : "3886 Wellington Street",
+            address2 : "Toronto, Ontario M9C 3J5",
+            phone: "+1 253-863-8967",
+            email: "contact@designo.co"
+        }, 
+        {
+            long: -30.329144955668294,
+            lat: 149.7882793693084,
+            country: "Australia",
+            office : "Designo AU Office",
+            address1 : "19 Balonne Street",
+            address2 : "New South Wales 2443",
+            phone: "(02) 6720 9092",
+            email: "contact@designo.au"
+        },
+        {
+            long: 53.71041818128988,
+            lat: -1.3417707595071173,
+            country: "United Kingdom",
+            office : "Designo UK Office",
+            address1 : "13  Colorado Way",
+            address2 : "Rhyd-y-fro SA8 9GA",
+            phone: "078 3115 1400",
+            email: "contact@designo.uk"
+        }
+
+    ]
 }
