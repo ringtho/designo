@@ -6,7 +6,7 @@ const MapCard = (props) => {
             <MapContainer 
                 className="map-leaflet" 
                 center={[props.long, props.lat]} 
-                zoom={10} 
+                zoom={16} 
                 scrollWheelZoom={false}
             >
                 <TileLayer

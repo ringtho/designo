@@ -157,8 +157,8 @@ export const data = {
 
     locations : [
         {
-            long: 43.64419484706138,
-            lat: -79.3945608610694,
+            long: 43.644163783781885,
+            lat: -79.39452867427016,
             country: "Canada",
             office : "Designo Central Office",
             address1 : "3886 Wellington Street",
@@ -177,8 +177,8 @@ export const data = {
             email: "contact@designo.au"
         },
         {
-            long: 53.71041818128988,
-            lat: -1.3417707595071173,
+            long: 51.73202318632,
+            lat: -3.8621561383648406,
             country: "United Kingdom",
             office : "Designo UK Office",
             address1 : "13  Colorado Way",
