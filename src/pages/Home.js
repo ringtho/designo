@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import GetInTouch from "../components/GetInTouch"
 import SoftSkills from "../components/SoftSkills"
 import OfferCards from "../components/offers/OfferCards"
+import { HashLink } from "react-router-hash-link"
 
 
 const Home = () => {
@@ -10,7 +11,6 @@ const Home = () => {
     return (
         <div className="app">
         <Navbar />
-        
         <main className="home-main">
             <section className="hero">
                 <div className="hero-container">
@@ -19,7 +19,8 @@ const Home = () => {
                         <p>With over 10 years in the industry, we are experienced in creating 
                             fully responsive websites, app design, and engaging brand experiences. 
                             Find out more about our services.</p>
-                        <button className="hero-btn">LEARN MORE</button>
+                        {/* <button className="hero-btn">LEARN MORE</button> */}
+                        <HashLink className="hero-btn link-btn" to="/#offers" smooth>LEARN MORE</HashLink>
                     </div>
                 <div className="hero-image"></div>
                 </div>

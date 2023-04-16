@@ -40,7 +40,9 @@ const Contact = () => {
                                     
                                 />
                                 {errors?.name?.type === "required" && 
-                                <p className="error">{errorMessage.required}<i class="fa-solid fa-circle-exclamation"></i></p> }
+                                <p className="error">{errorMessage.required}
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                </p> }
                                 <input 
                                     type="text" 
                                     name="email" 
@@ -51,9 +53,13 @@ const Contact = () => {
                                     className="email-input" 
                                 />
                                 {errors?.email?.type === "required" && 
-                                <p className="error">{errorMessage.required}<i class="fa-solid fa-circle-exclamation"></i></p> }
+                                <p className="error">{errorMessage.required}
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                </p> }
                                 {errors?.email?.type === "pattern" && 
-                                <p className="error">{errorMessage.email}<i class="fa-solid fa-circle-exclamation"></i></p>}
+                                <p className="error">{errorMessage.email}
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                </p>}
                                 <input 
                                     type="text" 
                                     name="phone" 
@@ -66,7 +72,9 @@ const Contact = () => {
                                     {...register("message", {required: true})} 
                                 />
                                 {errors?.message?.type === "required" && 
-                                <p className="error">{errorMessage.required}<i class="fa-solid fa-circle-exclamation"></i></p> }
+                                <p className="error">{errorMessage.required}
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                </p> }
                                 <button type="submit">SUBMIT</button>
                             </form>
                         </div>

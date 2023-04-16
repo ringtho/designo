@@ -4,7 +4,7 @@ import GraphicDeignCard from "./GraphicDesignCard"
 
 const OfferCards = () => {
     return (
-        <section className="offers">
+        <section className="offers" id="offers">
             <WebDesignCard />
             <AppDesignCard />
             <GraphicDeignCard />
