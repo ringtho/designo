@@ -38,7 +38,16 @@ const Navbar = () => {
                 }   
             </div>
         </header>
-        <div className="navbar-small-screens" ></div>
+        {isMenuOpen && (<div className="navbar-mobile-screens" >
+            <div className="navbar-mobile-container">
+                <nav className="navbar-mobile-menu">
+                    <Link to="/about">OUR COMPANY</Link>
+                    <Link to="/location">LOCATIONS</Link>
+                    <Link to="/contact">CONTACT</Link>
+                </nav>
+            </div>
+            
+        </div>)}
         </>
     )
 }
