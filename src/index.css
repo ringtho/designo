@@ -6,6 +6,7 @@
   --primary-dark: #E7816B;
   --primary-light: #FDF3F0;
   --secondary-dark: #1D1C1E;
+  --primary-dark-hover: #FFAD9B;
   --primary-font: 'Jost', sans-serif;
   --secondary-font: 'League Spartan', sans-serif;
 }
@@ -127,7 +128,6 @@ h1, h2, h3, h4 {
 }
 
 .hero-container {
-  /* overflow: hidden; */
   position: absolute;
   top: 0;
   left: 0;
@@ -151,10 +151,10 @@ h1, h2, h3, h4 {
   color: #FFFFFF;
   margin-bottom: 14px;
   line-height: 36px;
-  /* font-weight: 500; */
 }
 
 .hero-content > p {
+  font-size: 15px;
   color: #FFFFFF;
 }
 
@@ -801,6 +801,12 @@ textarea:focus {
   height: 320px;
   width: 100%;
   z-index: 2;
+}
+
+button:hover {
+  background-color: var(--primary-dark-hover);
+  color: #FFFFFF;
+  transition-delay: 0.5;
 }
 
 
