@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Footer = () => {
 
@@ -7,20 +7,20 @@ const Footer = () => {
             <div className="footer-contents">
                 <div className="logo-container footer-logo">
                     <div className="header-circle"></div>
-                    <Link to="/" className="link">
+                    <NavLink to="/" className="link">
                         <h1 className="title-footer">DESIGNO</h1>
-                    </Link>  
+                    </NavLink>  
                 </div>
                 <ul className="footer-nav">
-                    <Link to="/about" className="link">
+                    <NavLink to="/about" className="link">
                         <li>OUR COMPANY</li>
-                    </Link>
-                    <Link to="/location" className="link">
+                    </NavLink>
+                    <NavLink to="/location" className="link">
                         <li>LOCATIONS</li>
-                    </Link>
-                    <Link to="/contact" className="link">
+                    </NavLink>
+                    <NavLink to="/contact" className="link">
                         <li>CONTACT</li>
-                    </Link>
+                    </NavLink>
                 </ul>
                 <div className="office-location">
                     <p className="bold">Designo Central Office</p>
@@ -33,11 +33,21 @@ const Footer = () => {
                     <p>M : contact@designo.co</p>
                 </div>
                 <div className="footer-icons">
-                    <i className="fa-brands fa-square-facebook"></i>
-                    <i className="fa-brands fa-youtube"></i>
-                    <i className="fa-brands fa-twitter"></i>
-                    <i className="fa-brands fa-pinterest"></i>
-                    <i className="fa-brands fa-instagram"></i>
+                    <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://pinterest.com" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
         </footer>
