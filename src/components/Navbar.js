@@ -8,6 +8,7 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
     return (
+        <>
         <header className="nav-items">
             <div className="logo-container">
                 <div className="header-circle"></div>
@@ -37,6 +38,8 @@ const Navbar = () => {
                 }   
             </div>
         </header>
+        <div className="navbar-small-screens" ></div>
+        </>
     )
 }
 

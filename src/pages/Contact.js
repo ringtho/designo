@@ -1,9 +1,17 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import LocationCard from "../components/LocationCard"
+import { useForm } from "react-hook-form"
 
 
 const Contact = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const onSubmit = data => console.log(data);
+    const errorMessage = {
+        required: "Can't be empty",
+        email: "Please use a valid email address"
+    }
     return (
         <>
             <Navbar />
@@ -22,11 +30,40 @@ const Contact = () => {
                                     drop us a line.
                                 </p>
                             </div>
-                            <form className="form" action="#">
-                                <input type="name" name="name" required placeholder="Name" />
-                                <input type="email" name="email" required placeholder="Email" />
-                                <input type="text" name="phone" placeholder="Phone" />
-                                <textarea name="message" placeholder="Your Message" />
+                            <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    placeholder="Name" 
+                                    {...register("name", {required: true})} 
+                                />
+                                {errors?.name?.type === "required" && 
+                                <p className="error">{errorMessage.required}</p> }
+                                <input 
+                                    type="text" 
+                                    name="email" 
+                                    placeholder="Email" 
+                                    {...register("email", 
+                                    {pattern: /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/gm, 
+                                    required: true})} 
+                                />
+                                {errors?.email?.type === "required" && 
+                                <p className="error">{errorMessage.required}</p> }
+                                {errors?.email?.type === "pattern" && 
+                                <p className="error">{errorMessage.email}</p>}
+                                <input 
+                                    type="text" 
+                                    name="phone" 
+                                    placeholder="Phone" 
+                                    {...register("phone")} 
+                                />
+                                <textarea 
+                                    name="message" 
+                                    placeholder="Your Message" 
+                                    {...register("message", {required: true})} 
+                                />
+                                {errors?.message?.type === "required" && 
+                                <p className="error">{errorMessage.required}</p> }
                                 <button type="submit">SUBMIT</button>
                             </form>
                         </div>

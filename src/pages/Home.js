@@ -15,8 +15,8 @@ const Home = () => {
         <>
         <Navbar />
         
-        <div className="navbar-small-screens" >
-        <main>
+        {/* <div className="navbar-small-screens" > */}
+        <main className="home-main">
             
             <section className="hero">
                 <div className="hero-container">
@@ -89,7 +89,6 @@ const Home = () => {
         
         <GetInTouch />
         <Footer />
-        </div>
         </>
 
     )
