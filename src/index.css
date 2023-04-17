@@ -718,6 +718,12 @@ button:hover {
   margin-top: 32px;
 }
 
+.location-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .location-container > h4 {
   font-size: 15px;
   font-weight: 700;
@@ -728,6 +734,12 @@ button:hover {
   flex-direction: column;
   gap: 40px;
   margin-bottom: 120px;
+}
+
+.map-leaflet {
+  height: 320px;
+  width: 100%;
+  z-index: 2;
 }
 
 .form-container {
@@ -834,12 +846,6 @@ textarea:focus {
 .link:hover {
   color: #E7816B;
   transition: color 0.5s;
-}
-
-.map-leaflet {
-  height: 320px;
-  width: 100%;
-  z-index: 2;
 }
 
 button:hover,
@@ -1135,6 +1141,40 @@ hr {
 
   .about-location {
     margin: 0;
+  }
+
+  .location-container > h4 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .location-wrapper {
+    gap: 120px;
+  }
+
+  .map-leaflet {
+    height: 326px;
+    border-radius: 15px;
+  }
+
+  .map-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contacts-card-container {
+    border-radius: 15px;
+    padding: 88px 75px;
+  }
+
+  .contacts-card-content {
+    text-align: left;
+  }
+
+  .location-contact-details {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
 }
