@@ -348,6 +348,10 @@ button {
   align-items: center;
 }
 
+.footer-nav-container {
+  width: 100%;
+}
+
 .logo-container.footer-logo {
   margin-bottom: 32px;
   width: 100%;
@@ -365,6 +369,7 @@ button {
   list-style: none;
   color: #FFFFFF;
   font-size: 14px;
+  line-height: 14px;
   font-weight: 400;
 }
 
@@ -902,6 +907,73 @@ a.active {
   .hero-content > p {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .offers {
+    margin: 0 40px 120px;
+  }
+
+  .get-in-touch {
+    height: 350px;
+    margin: 0 40px;
+  }
+
+  .get-in-touch-wrapper {
+    height: 100%;
+  }
+
+  .get-in-touch-container {
+    height: 100%;
+    padding: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .get-in-touch-container > h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .get-in-touch-container > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .get-in-touch-container > button {
+    width: fit-content;
+  }
+
+  .footer-contents {
+    padding: 80px 40px;
+  }
+
+  .footer-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container.footer-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .footer-nav {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: fit-content;
+    width: auto;
+  }
+
+  .footer-nav li {
+    margin: 0;
   }
 
 }

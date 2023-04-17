@@ -5,23 +5,25 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-contents">
-                <div className="logo-container footer-logo">
-                    <div className="header-circle"></div>
-                    <NavLink to="/" className="link">
-                        <h1 className="title-footer">DESIGNO</h1>
-                    </NavLink>  
+                <div className="footer-nav-container">
+                    <div className="logo-container footer-logo">
+                        <div className="header-circle"></div>
+                        <NavLink to="/" className="link">
+                            <h1 className="title-footer">DESIGNO</h1>
+                        </NavLink>  
+                    </div>
+                    <ul className="footer-nav">
+                        <NavLink to="/about" className="link">
+                            <li>OUR COMPANY</li>
+                        </NavLink>
+                        <NavLink to="/location" className="link">
+                            <li>LOCATIONS</li>
+                        </NavLink>
+                        <NavLink to="/contact" className="link">
+                            <li>CONTACT</li>
+                        </NavLink>
+                    </ul>
                 </div>
-                <ul className="footer-nav">
-                    <NavLink to="/about" className="link">
-                        <li>OUR COMPANY</li>
-                    </NavLink>
-                    <NavLink to="/location" className="link">
-                        <li>LOCATIONS</li>
-                    </NavLink>
-                    <NavLink to="/contact" className="link">
-                        <li>CONTACT</li>
-                    </NavLink>
-                </ul>
                 <div className="office-location">
                     <p className="bold">Designo Central Office</p>
                     <p>3886 Wellington Street</p>
