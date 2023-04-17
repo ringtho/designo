@@ -1175,7 +1175,6 @@ hr {
 
   .location-contact-details {
     flex-direction: row;
-    /* justify-content: space-between; */
     gap: 120px;
   }
 
