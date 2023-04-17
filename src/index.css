@@ -875,7 +875,7 @@ hr {
 }
 
 
-@media (min-width: 376px) {
+@media (min-width: 375px) {
 
   /* .nav-items {
     padding: 64px 40px;
@@ -885,7 +885,7 @@ hr {
 }
 
 /* Media queries for tablet mode */
-@media (min-width: 570px) {
+@media screen and (min-width: 570px) {
 
   .icon-container,
   .navbar-mobile-screens {
@@ -1175,7 +1175,8 @@ hr {
 
   .location-contact-details {
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 120px;
   }
 
   .form-container {
