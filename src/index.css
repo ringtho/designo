@@ -558,6 +558,7 @@ button:hover {
 
 .apps-card-desc > h3 {
   font-size: 20px;
+  line-height: 26px;
   color: var(--primary-dark);
   letter-spacing: 5px;
   margin-bottom: 16px;
@@ -918,6 +919,12 @@ hr {
     margin: 0 40px 120px;
   }
 
+.offer-container-web,
+.offer-container-app,
+.offer-container-graphic {
+  height: 200px;
+}
+
   .get-in-touch {
     height: 350px;
     margin: 0 40px;
@@ -1037,6 +1044,57 @@ hr {
   .soft-skills-desc > h3 {
     margin-bottom: 16px;
   }
+
+  .design-hero {
+    height: 252px;
+    margin: 0 40px;
+    border-radius: 15px;
+  }
+
+  .design-hero-content {
+    padding: 64px;
+  }
+
+  .design-hero-content > h2,
+  .about-hero-content > h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .design-hero-content > p,
+  .about-hero-content > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .card-container {
+    padding: 120px 40px;
+    gap: 32px;
+  }
+
+  .apps-card-container {
+    flex-direction: row;
+  }
+
+  .apps-card-image {
+    width: 50%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+  }
+
+  .apps-card-desc {
+    padding: 32px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
 }
 
 
