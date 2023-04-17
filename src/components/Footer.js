@@ -24,32 +24,35 @@ const Footer = () => {
                         </NavLink>
                     </ul>
                 </div>
-                <div className="office-location">
-                    <p className="bold">Designo Central Office</p>
-                    <p>3886 Wellington Street</p>
-                    <p>Toronto, Ontario M9C 3J5</p>
-                </div>
-                <div className="contact-us">
-                    <p className="bold">Contact Us (Central Office)</p>
-                    <p>P : +1 253-863-8967</p>
-                    <p>M : contact@designo.co</p>
-                </div>
-                <div className="footer-icons">
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a href="https://youtube.com" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://pinterest.com" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-pinterest"></i>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-instagram"></i>
-                    </a>
+                <hr />
+                <div className="footer-location-container">
+                    <div className="office-location">
+                        <p className="bold">Designo Central Office</p>
+                        <p>3886 Wellington Street</p>
+                        <p>Toronto, Ontario M9C 3J5</p>
+                    </div>
+                    <div className="contact-us">
+                        <p className="bold">Contact Us (Central Office)</p>
+                        <p>P : +1 253-863-8967</p>
+                        <p>M : contact@designo.co</p>
+                    </div>
+                    <div className="footer-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                            <i className="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                            <i className="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                            <i className="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://pinterest.com" target="_blank" rel="noreferrer">
+                            <i className="fa-brands fa-pinterest"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                            <i className="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
