@@ -797,7 +797,7 @@ button:hover {
 
 .form input,
 .form textarea {
-  background-color: var(--primary-dark);
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #FFFFFF;
   padding: 25px 14px 12px 14px;
@@ -1140,7 +1140,8 @@ hr {
   }
 
   .about-location {
-    margin: 0;
+    margin: 0 40px;
+    gap: 80px;
   }
 
   .location-container > h4 {
@@ -1177,6 +1178,53 @@ hr {
     justify-content: space-between;
   }
 
+  .form-container {
+    margin: 0 40px;
+    border-radius: 15px;
+  }
+
+  .locationCard-container {
+    margin-block: 120px;
+  }
+
+  .contact-container {
+    padding: 70px 58px;
+  }
+
+  .contact-heading {
+    gap: 32px;
+    text-align: left;
+  }
+
+  .contact-heading > h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .contact-heading > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .contact-wrapper {
+    gap: 40px;
+  }
+
+  .form button {
+    margin-top: 24px;
+    text-align: right;
+    width: auto;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 25px 14px 12px 25px;
+  }
+
+  .form-btn-container {
+    width: 100%;
+    text-align: right;
+  }
 }
 
 

@@ -75,13 +75,17 @@ const Contact = () => {
                                 <p className="error">{errorMessage.required}
                                 <i class="fa-solid fa-circle-exclamation"></i>
                                 </p> }
-                                <button type="submit">SUBMIT</button>
+                                <div className="form-btn-container">
+                                    <button type="submit">SUBMIT</button>
+                                </div>
                             </form>
                         </div>
                     </div>
 
                 </section>
-                <LocationCard />
+                <div className="locationCard-container">
+                    <LocationCard />
+                </div>
             </main>
             <Footer/>
         </div>
