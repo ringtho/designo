@@ -12,7 +12,7 @@ const About = () => {
         <div className="app">
         <Navbar />
         <section className="about-wrapper">
-            <section className="about-hero">
+            <div className="about-hero">
                 <img src={heroImg} alt="" className="about-hero-image" />
                 <div className="about-components">
                     <div className="about-components-wrapper">
@@ -30,7 +30,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <AboutCard {...data.aboutDescription1} />
             <LocationCard />
             <AboutCard {...data.aboutDescription2} />

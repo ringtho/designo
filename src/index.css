@@ -571,7 +571,6 @@ button:hover {
 }
 
 /* about */
-
 .about-wrapper {
   margin-bottom: 120px;
 }
@@ -585,6 +584,7 @@ button:hover {
 .about-components {
   background-color: #E7816B;
   position: relative;
+  overflow: hidden;
 }
 
 .about-components::before {
@@ -625,6 +625,7 @@ button:hover {
   text-align: center;
   padding: 80px 24px;
   position: relative;
+  overflow: hidden;
 }
 
 .about-descriptions::before {
@@ -1093,7 +1094,48 @@ hr {
     justify-content: center;
   }
 
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
 
+  .about-hero {
+    margin: 0 40px;
+  }
+
+  .about-hero-image {
+    border-top-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .about-components,
+  .about-descriptions {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .about-descriptions {
+    padding: 68px 58px;
+  }
+
+  .about-components-wrapper {
+    padding: 64px 58px;
+  }
+
+  .about-description-content > h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .about-description-content > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-location {
+    margin: 0;
+  }
 
 }
 
