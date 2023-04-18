@@ -1,0 +1,29 @@
+import { useEffect, useState } from "react"
+
+
+
+function useWindowSize(){
+    const isWindowClient = typeof window === "object"
+
+    const [windowSize, setWindowSize] = useState(
+        isWindowClient ? window.innerWidth : undefined
+    )
+
+
+    useEffect(() => {
+        function setSize() {
+            setWindowSize(window.innerWidth);
+        }
+
+        if (isWindowClient) {
+            window.addEventListener("resize", setSize);
+
+            //cleanup of resize event listener
+            return () => window.removeEventListener("resize", setSize);
+        }
+    },[isWindowClient, setWindowSize])
+
+    return windowSize
+}
+
+export default useWindowSize

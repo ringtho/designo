@@ -6,8 +6,13 @@ import LocationCard from "../components/LocationCard"
 import AboutCard from "../components/AboutCard"
 import { data } from "../data"
 
+import useWindowSize from "../hooks/useWindowSize"
+
 
 const About = () => {
+
+    const windowSize = useWindowSize()
+    console.log(windowSize)
     return (
         <div className="app">
         <Navbar />
