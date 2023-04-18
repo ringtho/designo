@@ -451,20 +451,21 @@ button {
   color: #FFFFFF;
 }
 
-.get-in-touch-container > h2 {
+.get-in-touch-desc > h2 {
   font-size: 32px;
   font-weight: 500;
   line-height: 36px;
   margin-bottom: 16px;
 }
 
-.get-in-touch-container > p {
+.get-in-touch-desc > p {
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 32px;
+  
 }
 
 .footer-btn {
+  margin-top: 32px;
   padding: 16px 18px;
   border: none;
   border-radius: 8px;
@@ -955,12 +956,12 @@ hr {
     align-items: center;
   }
 
-  .get-in-touch-container > h2 {
+  .get-in-touch-desc > h2 {
     font-size: 40px;
     line-height: 40px;
   }
 
-  .get-in-touch-container > p {
+  .get-in-touch-desc > p {
     font-size: 16px;
     line-height: 26px;
   }
@@ -1229,6 +1230,40 @@ hr {
   .form-btn-container {
     width: 100%;
     text-align: right;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .nav-items {
+    padding: 64px 165px;
+  }
+
+  .footer-contents {
+    padding: 72px 165px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .get-in-touch {
+    height: fit-content;
+    margin: 0 165px;
+  }
+
+  .get-in-touch-container {
+    padding: 72px 96px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .get-in-touch-desc {
+    max-width: 460px;
+    text-align: left;
+  }
+
+  .footer-btn {
+    margin: 0;
   }
 }
 
