@@ -12,11 +12,18 @@ import loopstudiosImg from "./assets/app-design/desktop/image-loopstudios.jpg"
 import timbrownImg from "./assets/graphic-design/desktop/image-change.jpg"
 import boxedwaterImg from "./assets/graphic-design/desktop/image-boxed-water.jpg"
 import scienceImg from "./assets/graphic-design/desktop/image-science.jpg"
-import wordclassImg from "./assets/about/mobile/image-world-class-talent.jpg"
-import realdealImg from "./assets/about/mobile/image-real-deal.jpg"
 import passionatePic from "./assets/home/desktop/illustration-passionate.svg"
 import resourcefulPic from "./assets/home/desktop/illustration-resourceful.svg"
 import friendlyPic from "./assets/home/desktop/illustration-friendly.svg"
+import wordclassImg from "./assets/about/mobile/image-world-class-talent.jpg"
+import realdealImg from "./assets/about/mobile/image-real-deal.jpg"
+import heroMobileImg from "./assets/about/mobile/image-about-hero.jpg"
+import wordclassTabletImg from "./assets/about/tablet/image-world-class-talent.jpg"
+import realdealTabletImg from "./assets/about/tablet/image-real-deal.jpg"
+import heroTabletImg from "./assets/about/tablet/image-about-hero.jpg"
+import wordclassDesktopImg from "./assets/about/desktop/image-world-class-talent.jpg"
+import realdealDesktopImg from "./assets/about/desktop/image-real-deal.jpg"
+import heroDesktopImg from "./assets/about/desktop/image-about-hero.jpg"
 
 export const data = {
 
@@ -132,8 +139,23 @@ export const data = {
         description: `We deliver eye-catching branding 
         materials that are tailored to meet your business objectives.`
     },
+    about : {
+        mobileImg: heroMobileImg,
+        tabletImg: heroTabletImg,
+        desktopImg: heroDesktopImg,
+        title: "About Us",
+        description: `Founded in 2010, we are a creative agency that 
+        produces lasting results for our clients. We’ve 
+        partnered with many startups, corporations, and 
+        nonprofits alike to craft designs that make real 
+        impact. We’re always looking forward to creating brands, 
+        products, and digital experiences that connect with our 
+        clients’ audiences.`
+    },
     aboutDescription1: {
-        img: wordclassImg,
+        mobileImg: wordclassImg,
+        tabletImg: wordclassTabletImg,
+        desktopImg: wordclassDesktopImg,
         title: "World-class talent",
         paragraph1: `We are a crew of strategists, problem-solvers, and technologists. 
         Every design is thoughtfully crafted from concept to launch, 
@@ -146,7 +168,9 @@ export const data = {
         outcomes that encapsulates their brand’s story and mission.`
     },
     aboutDescription2: {
-        img: realdealImg,
+        mobileImg: realdealImg,
+        tabletImg: realdealTabletImg,
+        desktopImg: realdealDesktopImg,
         title: "The real deal",
         paragraph1: `As strategic partners in our clients’ businesses, we are ready to 
         take on any challenge as our own.

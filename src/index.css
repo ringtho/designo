@@ -575,8 +575,13 @@ button:hover {
   margin-bottom: 120px;
 }
 
+.about-image-container {
+  border: 1px solid red;
+}
+
 .about-hero-image {
   height: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -1112,7 +1117,7 @@ hr {
 
   .about-hero-image {
     border-top-left-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   .about-components,
