@@ -22,7 +22,7 @@ const GraphicDesign = () => {
             <div className="card-container">
             {appCards}
             </div>
-            <section className="offers">
+            <section className="offers-design">
                 <WebDesignCard />
                 <AppDesignCard />
             </section>

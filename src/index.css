@@ -220,7 +220,8 @@ button {
   margin-top: -150px;
 }
 
-.offers {
+.offers,
+.offers-design {
   margin: 0px 24px 96px 24px;
   display: flex;
   flex-direction: column;
@@ -939,7 +940,8 @@ hr {
     margin: 70px auto 0 auto;
   }
 
-  .offers {
+  .offers,
+  .offers-design {
     margin: 0 40px 120px;
   }
 
@@ -1340,6 +1342,13 @@ hr {
     gap: 24px 30px;
   }
 
+  .offers-design {
+    margin: 0 165px 160px;
+    height: 308px;
+    flex-wrap: wrap;
+    gap: 24px 30px;
+  }
+
   .offer-container-web {
     flex: 2 1 100%;
     width: 48%;
@@ -1587,7 +1596,8 @@ hr {
   .about-hero,
   .card-container,
   .design-hero,
-  .offers
+  .offers,
+  .offers-design
   {
     width: 1110px;
     margin-right: auto;
