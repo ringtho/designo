@@ -206,7 +206,6 @@ button {
   height: 543px;
   width: 280px;
   margin: 80px auto 0 auto;
-  /* border: 5px solid greenyellow; */
 }
 
 .hero-image {
@@ -431,6 +430,7 @@ button {
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .get-in-touch::before {
@@ -1035,6 +1035,12 @@ hr {
     border: none;
   }
 
+  
+  .black {
+    height: 30%;
+    top: 70%;
+  }
+
   .soft-skills {
     margin: 120px 40px 70px;
     gap: 32px;
@@ -1250,8 +1256,12 @@ hr {
   }
   
   .get-in-touch {
-    height: fit-content;
+    height: auto;
     margin: 0 165px;
+  }
+
+  .get-in-touch-section {
+    border: none;
   }
 
   .footer-contents {
@@ -1555,12 +1565,28 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
-  /* .app {
+  .nav-items,
+  .footer-contents,
+  .home-main,
+  .location-wrapper
+  {
     width: 1440px;
-    margin-left: auto;
     margin-right: auto;
-  } */
-  
+    margin-left: auto;
+  }
+
+  .get-in-touch,
+  .form-container,
+  .about-location,
+  .about-hero,
+  .card-container,
+  .design-hero,
+  .offers
+  {
+    width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 
