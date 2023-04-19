@@ -1467,11 +1467,35 @@ hr {
   }
 
   .about-location {
-    border: 1px solid green;
     margin: 0 165px;
     gap: 30px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .location-wrapper {
+    gap: 32px;
+  }
+
+  .location-wrapper>*:nth-child(odd){
+    flex-direction: row-reverse;
+  }
+
+  .map-details-container {
+    flex-direction: row;
+    height: 326px;
+    gap: 30px;
+  }
+
+  .map-leaflet {
+    height: 100%;
+    width: 350px;
+  }
+
+  .contacts-card-container {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
   }
 
 }
