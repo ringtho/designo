@@ -1498,6 +1498,33 @@ hr {
     width: 100%;
   }
 
+  .form-container {
+    margin: 0 165px;
+    height: auto;
+  }
+
+  .contact-container {
+    padding: 96px;
+    height: 100%;
+  }
+
+  .contact-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .form {
+    width: 40%;
+    flex: 1 1 0;
+  }
+
+  .contact-heading {
+    width: 60%;
+    flex: 1 1 0;
+  }
+
 }
 
 
