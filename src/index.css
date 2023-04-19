@@ -1290,6 +1290,10 @@ hr {
     text-align: left;
   }
 
+  .link-btn {
+    align-self: flex-start;
+  }
+
   .hero-image {
     margin-top: 140px;
     width: 284px;
@@ -1339,7 +1343,6 @@ hr {
   }
 
   .card-container {
-    /* border: 1px solid pink; */
     margin: 160px 165px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1351,13 +1354,11 @@ hr {
   }
 
   .apps-card {
-    /* border: 2px solid greenyellow; */
     min-width: 30%;
   }
 
 
   .apps-card-container {
-    /* border: 1px solid blue; */
     flex-direction: column;
     /* width: 350px; */
   }

@@ -19,8 +19,8 @@ const Home = () => {
                         <p>With over 10 years in the industry, we are experienced in creating 
                             fully responsive websites, app design, and engaging brand experiences. 
                             Find out more about our services.</p>
-                        {/* <button className="hero-btn">LEARN MORE</button> */}
-                        <HashLink className="hero-btn link-btn" to="/#offers" smooth>LEARN MORE</HashLink>
+                        <HashLink className="hero-btn link-btn" to="/#offers" smooth>
+                        LEARN MORE</HashLink>
                     </div>
                 <div className="hero-image"></div>
                 </div>
