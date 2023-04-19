@@ -1466,6 +1466,14 @@ hr {
     border-top-right-radius: 15px;
   }
 
+  .about-location {
+    border: 1px solid green;
+    margin: 0 165px;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 
