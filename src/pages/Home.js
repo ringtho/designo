@@ -4,6 +4,7 @@ import GetInTouch from "../components/GetInTouch"
 import SoftSkills from "../components/SoftSkills"
 import OfferCards from "../components/offers/OfferCards"
 import { HashLink } from "react-router-hash-link"
+import heroImg from "../assets/home/desktop/image-hero-phone.png"
 
 
 const Home = () => {
@@ -22,7 +23,9 @@ const Home = () => {
                         <HashLink className="hero-btn link-btn" to="/#offers" smooth>
                         LEARN MORE</HashLink>
                     </div>
-                <div className="hero-image"></div>
+                    <div className="hero-image-container">
+                        <img src={heroImg} alt="" className="hero-image" />
+                    </div>
                 </div>
             </section>
             <OfferCards />
