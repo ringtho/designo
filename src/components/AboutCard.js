@@ -36,12 +36,8 @@ const AboutCard = (props) => {
                 <div className="about-descriptions-wrapper">
                     <div className="about-description-content">
                         <h2>{title}</h2>
-                        <p>
-                        {paragraph1} 
-                        </p>
-                        <p>
-                        {paragraph2}
-                        </p>
+                        <p>{paragraph1}</p>
+                        <p>{paragraph2}</p>
                     </div>
                 </div>
             </div>

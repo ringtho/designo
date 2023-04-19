@@ -30,8 +30,9 @@ const About = () => {
         <div className="app">
         <Navbar />
         <section className="about-wrapper">
-            <div className="about-hero">
-                <img src={img} alt="" className="about-hero-image" />
+            <div className="about-hero" id="about-main-hero">
+                <img src={img} alt="" 
+                className="about-hero-image row-reverse-image"/>
                 <div className="about-components">
                     <div className="about-components-wrapper">
                         <div className="about-hero-content">
