@@ -407,10 +407,10 @@ button {
 }
 
 .get-in-touch-section {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   position: relative;
-  top: 0;
+  /* top: 0; */
 }
 
 .black {
@@ -430,7 +430,6 @@ button {
   border-radius: 15px;
   position: relative;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .get-in-touch::before {
