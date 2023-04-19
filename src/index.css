@@ -30,6 +30,11 @@ h1, h2, h3, h4 {
 
 .app {
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
 }
 
 .nav-items {
@@ -340,6 +345,8 @@ button {
 
 .footer {
   background-color: var(--secondary-dark);
+  align-self: flex-end;
+  width: 100%;
 }
 
 .footer-contents {
@@ -1290,7 +1297,6 @@ hr {
 
   .hero {
     height: 640px;
-    max-height: fit-content;
     margin: 0px 165px 160px;
   }
 
@@ -1441,6 +1447,7 @@ hr {
   }
 
   .about-components {
+    width: 55%;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -1463,6 +1470,7 @@ hr {
 
   .about-descriptions {
     padding: 0 96px;
+    width: 55%;
     display: flex;
     align-items: center;
     border-top-right-radius: 15px;

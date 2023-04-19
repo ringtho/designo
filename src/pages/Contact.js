@@ -41,7 +41,7 @@ const Contact = () => {
                                 />
                                 {errors?.name?.type === "required" && 
                                 <p className="error">{errorMessage.required}
-                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <i className="fa-solid fa-circle-exclamation"></i>
                                 </p> }
                                 <input 
                                     type="text" 
@@ -54,11 +54,11 @@ const Contact = () => {
                                 />
                                 {errors?.email?.type === "required" && 
                                 <p className="error">{errorMessage.required}
-                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <i className="fa-solid fa-circle-exclamation"></i>
                                 </p> }
                                 {errors?.email?.type === "pattern" && 
                                 <p className="error">{errorMessage.email}
-                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <i className="fa-solid fa-circle-exclamation"></i>
                                 </p>}
                                 <input 
                                     type="text" 
@@ -73,7 +73,7 @@ const Contact = () => {
                                 />
                                 {errors?.message?.type === "required" && 
                                 <p className="error">{errorMessage.required}
-                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <i className="fa-solid fa-circle-exclamation"></i>
                                 </p> }
                                 <div className="form-btn-container">
                                     <button type="submit">SUBMIT</button>
