@@ -1416,7 +1416,7 @@ hr {
 
   .apps-card-desc {
     width: 100%;
-    /* height: 158px; */
+    height: 158px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 0;
@@ -1467,7 +1467,8 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 96px;
+    padding: 0 72px;
+    border: 1px solid red;
   }
 
   .about-hero-content {
@@ -1477,7 +1478,7 @@ hr {
   }
 
   .about-descriptions {
-    padding: 0 96px;
+    padding: 40px 72px;
     width: 55%;
     display: flex;
     align-items: center;
@@ -1485,6 +1486,7 @@ hr {
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    border: 1px solid red;
   }
 
   .about-description-content {
@@ -1538,6 +1540,15 @@ hr {
     width: 350px;
   }
 
+  .location-container,
+  .location-header {
+    min-width: 150px;
+  }
+
+  .location-contact-details {
+    gap: 72px;
+  }
+
   .contacts-card-container {
     border-radius: 15px;
     height: 100%;
@@ -1576,6 +1587,14 @@ hr {
 @media screen and (min-width: 1130px) {
   .hero-container {
     padding: 0 96px;
+  }
+
+  .location-contact-details {
+    gap: 120px;
+  }
+
+  .about-descriptions {
+    padding: 40px 96px;
   }
 }
 
