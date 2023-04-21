@@ -433,6 +433,10 @@ button {
   font-size: 24px;
 }
 
+.footer-icons i:hover {
+  color: var(--primary-dark-hover);
+}
+
 .get-in-touch-section {
   position: relative;
 }
@@ -580,6 +584,7 @@ button:hover {
   background-color: var(--primary-light);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  color: var(--text-color);
 }
 
 .apps-card-desc > h3 {
@@ -595,6 +600,18 @@ button:hover {
   font-size: 16px;
   font-weight: 400;
 }
+
+.apps-card-desc:hover {
+  background-color: var(--primary-dark);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.apps-card-desc:hover > h3 {
+  color: #FFFFFF;
+}
+
+.app
 
 /* about */
 .about-wrapper {
@@ -872,7 +889,6 @@ textarea:focus {
 .link {
   color: #FFFFFF;
 }
-
 
 .link:hover {
   color: #E7816B;
