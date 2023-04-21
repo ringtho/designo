@@ -15,7 +15,7 @@ const AppDesign = () => {
     })
 
     return (
-        <div className="app">
+        <div className="app app-design">
         <Navbar />
         <main>
             <Hero {...data.appHero} />

@@ -34,6 +34,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .nav-items {
@@ -1408,6 +1409,52 @@ hr {
 }
 
 @media screen and (min-width: 1080px) {
+
+  .app-contact::before,
+  .app-about::before,
+  .app-about::after,
+  .app-design::before,
+  .app-home::before,
+  .app-home::after  {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    z-index: -5;
+    background: url("./assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
+  }
+
+  .app-contact::before {
+    top: 55%;
+    left: 30%; 
+  }
+
+  .app-about::before {
+    top: 13%;
+    left: 0%;
+  }
+
+  .app-about::after {
+    top: 50%;
+    left: 56%;
+  }
+
+  .app-design::before {
+    top: 10%;
+    left: 0%;
+  }
+
+  .app-home::before {
+    top: 15%;
+    left: 0%;
+  }
+
+  .app-home::after {
+    top: -115%;
+    left: -100%;
+    transform: scale(-1);
+  }
+  
   .nav-items {
     padding: 64px 165px;
   }

@@ -27,7 +27,7 @@ const About = () => {
     
     const img = getImg()
     return (
-        <div className="app">
+        <div className="app app-about">
         <Navbar />
         <section className="about-wrapper">
             <div className="about-hero" id="about-main-hero">

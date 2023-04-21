@@ -15,7 +15,7 @@ const WebDesign = () => {
     })
 
     return (
-        <div className="app">
+        <div className="app app-design">
         <Navbar />
         <main>
             <Hero {...data.webHero} />

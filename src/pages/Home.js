@@ -10,7 +10,7 @@ import heroImg from "../assets/home/desktop/image-hero-phone.png"
 const Home = () => {
 
     return (
-        <div className="app">
+        <div className="app app-home">
         <Navbar />
         <main className="home-main">
             <section className="hero">
