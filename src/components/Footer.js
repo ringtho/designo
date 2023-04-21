@@ -13,13 +13,16 @@ const Footer = () => {
                         </NavLink>  
                     </div>
                     <ul className="footer-nav">
-                        <NavLink to="/about" className="link">
+                        <NavLink to="/about" 
+                        className={({isActive}) => isActive ? "active" : ""}>
                             <li>OUR COMPANY</li>
                         </NavLink>
-                        <NavLink to="/location" className="link">
+                        <NavLink to="/location" 
+                        className={({isActive}) => isActive ? "active" : ""}>
                             <li>LOCATIONS</li>
                         </NavLink>
-                        <NavLink to="/contact" className="link">
+                        <NavLink to="/contact" 
+                        className={({isActive}) => isActive ? "active" : ""}>
                             <li>CONTACT</li>
                         </NavLink>
                     </ul>

@@ -94,6 +94,18 @@ h1, h2, h3, h4 {
   color: var(--text-color);
 }
 
+.navbar-menu a:hover,
+.navbar-mobile-menu a:hover 
+ {
+  text-decoration-line: underline;
+}
+
+.navbar-mobile-menu a.active,
+.navbar-menu a.active,
+.active li {
+  text-decoration-line: underline;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -127,8 +139,6 @@ h1, h2, h3, h4 {
 .title-footer {
   color: #FFFFFF;
 }
-
-
 
 .navbar-icon:hover {
   cursor: pointer;
@@ -233,17 +243,14 @@ button {
 .offer-container-graphic {
   height: 250px;
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 
 .offer-container-web {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('./assets/home/mobile/image-web-design.jpg');
-  background-repeat: no-repeat;
+  ), url('./assets/home/mobile/image-web-design.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -251,8 +258,7 @@ button {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('./assets/home/mobile/image-app-design.jpg');
-  background-repeat: no-repeat;
+  ), url('./assets/home/mobile/image-app-design.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -260,14 +266,24 @@ button {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('./assets/home/mobile/image-graphic-design.jpg');
-  background-repeat: no-repeat;
+  ), url('./assets/home/mobile/image-graphic-design.jpg') no-repeat;
   background-size: cover;
 }
 
 .offer-item {
   color: #FFFFFF;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-item:hover {
+  background-color: rgba(231,129,107, 0.7);
+  cursor: pointer;
 }
 
 .offer-item > h2 {
@@ -376,6 +392,10 @@ button {
   margin-top: 32px;
   list-style: none;
   color: #FFFFFF;
+}
+
+.footer-nav > a {
+  text-decoration: none;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -414,10 +434,7 @@ button {
 }
 
 .get-in-touch-section {
-  /* display: flex;
-  flex-direction: column; */
   position: relative;
-  /* top: 0; */
 }
 
 .black {
@@ -856,10 +873,15 @@ textarea:focus {
   color: #FFFFFF;
 }
 
-.footer-nav li:hover,
+
 .link:hover {
   color: #E7816B;
   transition: color 0.5s;
+}
+
+.footer-nav li:hover {
+  text-decoration-line: underline;
+  transition: 0.5s;
 }
 
 button:hover,
@@ -880,16 +902,13 @@ button:hover,
   font-style: italic;
 }
 
-a.active {
-  color: var(--primary-dark);
-}
-
 hr {
   display: none;
 }
 
 
 @media (min-width: 375px) {
+
 
   /* .nav-items {
     padding: 64px 40px;
@@ -950,6 +969,30 @@ hr {
   .offer-container-graphic {
     height: 200px;
   }
+
+  .offer-container-web {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/tablet/image-web-design.jpg') no-repeat;
+  background-size: cover;
+}
+
+.offer-container-app {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/tablet/image-app-design.jpg') no-repeat;
+  background-size: cover;
+}
+
+.offer-container-graphic {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/tablet/image-graphic-design.jpg') no-repeat;
+  background-size: cover;
+}
 
   .get-in-touch {
     height: 350px;
@@ -1253,8 +1296,11 @@ hr {
   }
 }
 
-@media screen and (min-width: 769px){
-  
+@media screen and (min-width: 615px){
+  .navbar-menu a,
+  .footer-nav a {
+    letter-spacing: 2px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -1359,6 +1405,30 @@ hr {
     flex: 1 0 auto;
     width: 48%;
   }
+
+  .offer-container-web {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/desktop/image-web-design-large.jpg') no-repeat;
+  background-size: cover;
+}
+
+.offer-container-app {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/desktop/image-app-design.jpg') no-repeat;
+  background-size: cover;
+}
+
+.offer-container-graphic {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/home/desktop/image-graphic-design.jpg') no-repeat;
+  background-size: cover;
+}
 
   .soft-skills {
     margin: 160px 165px;
@@ -1468,7 +1538,6 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 0 72px;
-    border: 1px solid red;
   }
 
   .about-hero-content {
@@ -1486,7 +1555,6 @@ hr {
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border: 1px solid red;
   }
 
   .about-description-content {
