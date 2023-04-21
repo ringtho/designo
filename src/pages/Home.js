@@ -22,6 +22,8 @@ const Home = () => {
                             Find out more about our services.</p>
                         <HashLink className="hero-btn link-btn" to="/#offers" smooth>
                         LEARN MORE</HashLink>
+                        {/* <button className="hero-btn link-btn" to="/#offers" smooth>
+                        LEARN MORE</button> */}
                     </div>
                     <div className="hero-image-container">
                         <img src={heroImg} alt="" className="hero-image" />
