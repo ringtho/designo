@@ -463,11 +463,12 @@ button {
 .get-in-touch::before {
   content: "";
   position: absolute;
-  width: 200%;
+  width:200%;
   height: 200%;
-  top: 0;
-  left: -100%;
+  bottom: calc(0px - 30%);
+  right: calc(0px - 90%);
   background: url("./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+  transform: rotate(180deg);
 }
 
 .get-in-touch-wrapper {
@@ -521,13 +522,12 @@ button:hover {
 .design-hero::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   top: calc(50% - 292px/2);
-  left: calc(50% - 292px/2);
+  left: -100%;
   z-index: 1;
-  background: url("./assets/home/desktop/bg-pattern-hero-home.svg") repeat-x;
-  background-size: 292px;
+  background: url("./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
 }
 
 .design-hero-content {
@@ -638,14 +638,13 @@ button:hover {
 .about-components::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 200%;
+  height: 200%;
+  top: -40%;
+  left: -90%;
   z-index: 1;
-  background: url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg") no-repeat;
-  background-size: 292px;
-  transform: rotate(90deg);
+  background: url("./assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+
 }
 
 .about-components-wrapper {
@@ -679,14 +678,23 @@ button:hover {
 .about-descriptions::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  width: 200%;
+  height: 200%;
+  top: -20%;
   left: -50%;
   z-index: 1;
-  background: url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg") repeat-y;
-  background-size: 292px;
-  transform: rotateY(180deg);
+  background: url("./assets/shared/desktop/bg-pattern-three-circles.svg");
+}
+
+.contacts-card-container::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0%;
+    left: 10%;
+    z-index: 1;
+    background: url("./assets/shared/desktop/bg-pattern-three-circles.svg");
 }
 
 .about-descriptions-wrapper {
@@ -797,15 +805,16 @@ button:hover {
 .contact-container {
   position: relative;
   padding: 72px 24px;
+  overflow: hidden;
 }
 
 .contact-container::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   top: 0;
-  left: 0;
+  left: -30%;
   z-index: 1;
   background: url("./assets/contact/mobile/bg-pattern-hero-contact-mobile.svg") no-repeat;
 }
@@ -992,23 +1001,34 @@ hr {
     rgba(0, 0, 0, 0.5)
   ), url('./assets/home/tablet/image-web-design.jpg') no-repeat;
   background-size: cover;
-}
+  }
 
-.offer-container-app {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('./assets/home/tablet/image-app-design.jpg') no-repeat;
-  background-size: cover;
-}
+  .offer-container-app {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('./assets/home/tablet/image-app-design.jpg') no-repeat;
+    background-size: cover;
+  }
 
-.offer-container-graphic {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('./assets/home/tablet/image-graphic-design.jpg') no-repeat;
-  background-size: cover;
-}
+  .offer-container-graphic {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('./assets/home/tablet/image-graphic-design.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .get-in-touch::before {
+    content: "";
+    position: absolute;
+    width:200%;
+    height: 200%;
+    bottom: calc(0px - 60%);
+    right: calc(0px - 90%);
+    background: url("./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+    transform: rotate(0deg);
+  }
 
   .get-in-touch {
     height: 350px;
@@ -1101,7 +1121,6 @@ hr {
     border: none;
   }
 
-  
   .black {
     height: 30%;
     top: 70%;
@@ -1140,6 +1159,12 @@ hr {
     height: 252px;
     margin: 0 40px;
     border-radius: 15px;
+  }
+
+  .design-hero::before {
+    top: calc(-70%);
+    left: -100%;
+    background: url("./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg") repeat-x;
   }
 
   .design-hero-content {
@@ -1195,6 +1220,13 @@ hr {
     margin: 0 40px;
   }
 
+  .about-components::before {
+    top: calc(-100%);
+    left: -20%;
+    background: url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg") repeat;
+  }
+  
+
   .about-hero-image {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -1208,6 +1240,18 @@ hr {
 
   .about-descriptions {
     padding: 68px 58px;
+  }
+
+  .about-descriptions::before {
+    top: -40%;
+    left: 30%;
+    background: url("./assets/shared/desktop/bg-pattern-three-circles.svg") no-repeat;
+  }
+
+  .contacts-card-container::before {
+    top: 10%;
+    left: 10%;
+    background: url("./assets/shared/desktop/bg-pattern-two-circles.svg");
   }
 
   .about-components-wrapper {
@@ -1276,6 +1320,12 @@ hr {
     padding: 70px 58px;
   }
 
+  .contact-container::before {
+    top: -10%;
+    left: -20%;
+    background: url("./assets/contact/desktop/bg-pattern-hero-desktop.svg") no-repeat;
+  }
+
   .contact-heading {
     gap: 32px;
     text-align: left;
@@ -1319,6 +1369,44 @@ hr {
   }
 }
 
+@media screen and (min-width: 769px){
+  .card-container {
+    margin: 120px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 30px;
+  }
+
+  .card-container>*{
+    flex: 1 1 47%;
+  }
+
+  .apps-card {
+    min-width: 47%;
+    max-width: 48%;
+  }
+
+  .apps-card-container {
+    flex-direction: column;
+  }
+
+  .apps-card-image {
+    height: 320px;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .apps-card-desc {
+    width: 100%;
+    height: 158px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0;
+  }
+}
+
 @media screen and (min-width: 1080px) {
   .nav-items {
     padding: 64px 165px;
@@ -1327,6 +1415,17 @@ hr {
   .get-in-touch {
     height: auto;
     margin: 0 165px;
+  }
+
+  .get-in-touch::before {
+    content: "";
+    position: absolute;
+    width:200%;
+    height: 200%;
+    bottom: calc(0px - 60%);
+    right: calc(0px - 90%);
+    background: url("./assets/shared/desktop/bg-pattern-call-to-action.svg");
+    transform: rotate(0deg);
   }
 
   .get-in-touch-section {
@@ -1467,45 +1566,27 @@ hr {
     margin: 0 165px;
   }
 
+  .design-hero::before {
+    top: calc(-70%);
+    left: -100%;
+    background: url("./assets/shared/desktop/bg-pattern-call-to-action.svg");
+  }
+
   .design-hero-content {
     padding: 64px 190px;
   }
 
   .card-container {
     margin: 160px 165px;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 32px 30px;
   }
 
   .card-container>*{
-    flex: 1 1 30%;
+    flex: 0 1 30%;
   }
 
   .apps-card {
     min-width: 30%;
-  }
-
-
-  .apps-card-container {
-    flex-direction: column;
-    /* width: 350px; */
-  }
-
-  .apps-card-image {
-    height: 320px;
-    width: 100%;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-
-  .apps-card-desc {
-    width: 100%;
-    height: 158px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 0;
   }
 
   .about-wrapper {
@@ -1540,6 +1621,11 @@ hr {
     border-top-right-radius: 15px;
   }
 
+  .about-components::before {
+    top: calc(-34%);
+    left: -5%;
+  }
+
   .about-components {
     width: 55%;
     border-bottom-right-radius: 0;
@@ -1571,6 +1657,17 @@ hr {
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+
+  .about-descriptions::before {
+    top: 50%;
+    left: 0;
+    background: url("./assets/shared/desktop/bg-pattern-two-circles.svg")no-repeat;
+  }
+
+  .contacts-card-container::before {
+    top: 10%;
+    left: 10%;
   }
 
   .about-description-content {
@@ -1647,6 +1744,11 @@ hr {
   .contact-container {
     padding: 96px;
     height: 100%;
+  }
+
+  .contact-container::before {
+    top: -15%;
+    left: 0%;
   }
 
   .contact-wrapper {
