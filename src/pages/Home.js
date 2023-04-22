@@ -20,7 +20,7 @@ const Home = () => {
                             fully responsive websites, app design, and engaging brand experiences. 
                             Find out more about our services.</p>
                         
-                        <Link className="hero-btn link-btn" to="/web-design" smooth>
+                        <Link className="hero-btn link-btn" to="/web-design">
                         LEARN MORE</Link>
                     </div>
                     <div className="hero-image-container">
