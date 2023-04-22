@@ -3,8 +3,8 @@ import Footer from "../components/Footer"
 import GetInTouch from "../components/GetInTouch"
 import SoftSkills from "../components/SoftSkills"
 import OfferCards from "../components/offers/OfferCards"
-// import { HashLink } from "react-router-hash-link"
 import heroImg from "../assets/home/desktop/image-hero-phone.png"
+import { Link } from "react-router-dom"
 
 const Home = () => {
 
@@ -20,10 +20,8 @@ const Home = () => {
                             fully responsive websites, app design, and engaging brand experiences. 
                             Find out more about our services.</p>
                         
-                        {/* <Link className="hero-btn link-btn" to="#offers">
-                        LEARN MORE</Link> */}
-                        <button className="hero-btn link-btn" to="/#offers" smooth>
-                        LEARN MORE</button>
+                        <Link className="hero-btn link-btn" to="/web-design" smooth>
+                        LEARN MORE</Link>
                     </div>
                     <div className="hero-image-container">
                         <img src={heroImg} alt="" className="hero-image" />
