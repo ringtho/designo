@@ -5,6 +5,7 @@ import SoftSkills from "../components/SoftSkills"
 import OfferCards from "../components/offers/OfferCards"
 import heroImg from "../assets/home/desktop/image-hero-phone.png"
 import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const Home = () => {
 
@@ -22,6 +23,8 @@ const Home = () => {
                         
                         <Link className="hero-btn link-btn" to="/web-design">
                         LEARN MORE</Link>
+                        <HashLink className="hero-btn link-btn" to="#offers">
+                        LEARN MORE</HashLink>
                     </div>
                     <div className="hero-image-container">
                         <img src={heroImg} alt="" className="hero-image" />
